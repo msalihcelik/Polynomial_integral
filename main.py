@@ -1,12 +1,10 @@
 #Mehmet Salih ÇELİK
 
-
 dosya=open("veriler.txt","r")
 liste = dosya.read().split()
 for i in range(len(liste)):
     liste[i]=int(liste[i])
 dosya.close()
-
 
 #Polinoma yaklastirma metodu formullerine gore xi ve xiyi degerlerini hesapliyoruz.
 def gunleritopla(n):
@@ -65,7 +63,6 @@ def matris_olustur(aa,bb):
 
 dereceler=matris_olustur(a,b)
 
-
 def gauss(matris):
     n = len(matris)
     for i in range(0, n):
@@ -101,7 +98,6 @@ dosya.write("--------- BUTUN LISTE ICIN ---------- \n")
 for i in range(len(katsayilar)):
     dosya.write(str(i+1)+". derece yaklasim katsayilar = "+str(katsayilar[i])+"\n")
 dosya.close()
-
 
 def yustu(n):
     x=0
@@ -146,8 +142,6 @@ dosya.write("En uygun hata degeri -->"+str(sr_sirali[0])+"\n")
 dosya.write("En uygun polinom derecesi -->"+str(sr.index(sr_sirali[0])+1)+"\n")
 dosya.close()
 
-
-
 m,n=0,10
 while(n<len(liste)):
     newlist=[]
@@ -176,8 +170,3 @@ while(n<len(liste)):
     dosya.close()
     n+=10
     m+=10
-
-
-
-
-
